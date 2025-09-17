@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Close button inside nav for mobile
+    const navClose = document.querySelector(".nav-close");
+    navClose.addEventListener("click", () => {
+        nav.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", false);
+        toggleIcon.classList.remove("fa-times");
+        toggleIcon.classList.add("fa-bars");
+    });
+
     // Close the nav when a link is clicked
     document.querySelectorAll(".nav-link").forEach(link => {
         link.addEventListener("click", () => {
@@ -53,6 +62,33 @@ document.addEventListener("DOMContentLoaded", () => {
         return div.innerHTML;
     }
 
+    // Project filtering functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'all' || category === filterValue) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeInUp 0.6s ease-out';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+
+
     // Basic form validation and submission handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -82,10 +118,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // Here you can add AJAX or fetch to send form data to server
-            messageDiv.textContent = 'Thank you for your message! I will get back to you soon.';
-            messageDiv.style.color = 'green';
-            this.reset();
+            // Send form data to Formspree (replace with your actual Formspree endpoint)
+            const formData = new FormData(this);
+
+            fetch('https://formspree.io/f/xldwyoon', {  // Replace 'your-form-id' with your actual Formspree form ID
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    messageDiv.textContent = 'Thank you for your message! I will get back to you soon.';
+                    messageDiv.style.color = 'green';
+                    this.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                messageDiv.textContent = 'Oops! There was a problem submitting your form. Please try again later.';
+                messageDiv.style.color = 'red';
+            });
         });
     }
+
 });
