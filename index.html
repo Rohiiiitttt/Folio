@@ -14,7 +14,7 @@
     <!-- Header Section -->
     <header>
         <div class="header-container">
-            <h1>Rohit Kumar Patel</h1>
+            <h1>PortFolio</h1>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
@@ -26,6 +26,9 @@
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                <button class="nav-close" aria-label="Close navigation">
+                    <i class="fas fa-times"></i>
+                </button>
             </nav>
         </div>
     </header>
@@ -60,54 +63,218 @@
     <section id="skills" data-aos="fade-up">
         <h2>Skills</h2>
         <div class="skills-container">
-            <div class="skills-category" data-aos="fade-right">
+            <div class="skills-category">
                 <h3>Programming Languages</h3>
+                <p class="skill-description">Proficient in multiple programming languages for web development and system programming.</p>
                 <ul>
-                    <li><i class="fas fa-code"></i> HTML5</li>
-                    <li><i class="fas fa-code"></i> CSS3</li>
-                    <li><i class="fas fa-code"></i> JavaScript</li>
-                    <li><i class="fas fa-code"></i> C/C++</li>
-                    <li><i class="fas fa-code"></i> Java</li>
+                    <li class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <div class="skill-info">
+                            <strong>HTML5:</strong> Creating semantic markup, implementing accessibility standards, responsive web design, form validation, multimedia integration, and SEO optimization
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <div class="skill-info">
+                            <strong>CSS3:</strong> Advanced styling techniques, CSS animations and transitions, Flexbox and Grid layouts, responsive design patterns, CSS preprocessors, and cross-browser compatibility
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <div class="skill-info">
+                            <strong>JavaScript:</strong> DOM manipulation and event handling, ES6+ features (arrow functions, promises, async/await), AJAX and API integration, interactive web applications, and modern frameworks
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <div class="skill-info">
+                            <strong>C/C++:</strong> System-level programming, data structures and algorithms, memory management, file I/O operations, multi-threading, and performance optimization
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <a href="https://en.cppreference.com/w/" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <div class="skill-info">
+                            <strong>Java:</strong> Object-oriented programming principles, Java collections framework, exception handling, multi-threading, JDBC for database connectivity, and enterprise application development
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <a href="https://docs.oracle.com/en/java/javase/" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="skills-category" data-aos="fade-up">
+            <div class="skills-category">
                 <h3>Tools & Technologies</h3>
+                <p class="skill-description">Experienced with development tools, databases, and cloud services for efficient software development.</p>
                 <ul>
-                    <li><i class="fas fa-tools"></i>GitHub</li>
-                    <li><i class="fas fa-database"></i> MySQL</li>
-                    <li><i class="fas fa-laptop-code"></i> Visual Studio Code</li>
-                    <li><i class="fas fa-cloud"></i> Firebase</li>
+                    <li class="skill-item">
+                        <i class="fab fa-github"></i>
+                        <div class="skill-info">
+                            <strong>GitHub:</strong> Distributed version control system, repository management, pull requests and code reviews, continuous integration/deployment, issue tracking, and collaborative development workflows
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                            <a href="https://github.com/" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <div class="skill-info">
+                            <strong>MySQL:</strong> Relational database management, SQL query optimization, database normalization, stored procedures and triggers, data backup and recovery, and performance tuning
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="skill-info">
+                            <strong>Visual Studio Code:</strong> Integrated development environment, code editing and syntax highlighting, debugging tools, version control integration, extension ecosystem, and productivity features
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                            <a href="https://code.visualstudio.com/docs" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-fire"></i>
+                        <div class="skill-info">
+                            <strong>Firebase:</strong> Cloud platform services, real-time database management, user authentication and authorization, cloud functions, hosting and deployment, and cross-platform app development
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <a href="https://firebase.google.com/docs" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="skills-category" data-aos="fade-left">
+            <div class="skills-category">
                 <h3>Soft Skills</h3>
+                <p class="skill-description">Essential interpersonal and professional skills for effective collaboration and project success.</p>
                 <ul>
-                    <li><i class="fas fa-comments"></i> Communication</li>
-                    <li><i class="fas fa-users"></i> Teamwork</li>
-                    <li><i class="fas fa-lightbulb"></i> Problem-Solving</li>
-                    <li><i class="fas fa-clock"></i> Time Management</li>
+                      <li class="skill-item">
+                        <i class="fas fa-comments"></i>
+                        <div class="skill-info">
+                            <strong>Communication:</strong> Effective verbal and written communication, technical documentation, client presentations, active listening, feedback delivery, and cross-functional team collaboration
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 50%"></div>
+                            </div>
+                            <a href="https://www.skillsyouneed.com/ips/communication-skills.html" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                        </li>
+                         <li class="skill-item">
+                        <i class="fas fa-users"></i>
+                        <div class="skill-info">
+                            <strong>Teamwork:</strong> Collaborative project execution, conflict resolution, knowledge sharing, mentoring junior team members, building positive team dynamics, and contributing to group success
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <a href="https://www.skillsyouneed.com/ips/teamwork.html" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="skill-info">
+                            <strong>Problem-Solving:</strong> Analytical thinking and data-driven decision making, creative solution development, root cause analysis, critical thinking, logical reasoning, and innovative problem resolution
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <a href="https://www.skillsyouneed.com/ips/problem-solving.html" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                        </li>
+                        <li class="skill-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="skill-info">
+                            <strong>Time Management:</strong> Efficient task prioritization and scheduling, meeting deadlines consistently, workload balancing, productivity optimization, resource allocation, and project timeline management
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <a href="https://www.skillsyouneed.com/ps/time-management.html" target="_blank" rel="noopener" class="learn-more">Learn More</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+<!-- Projects Section -->
     <section id="projects" data-aos="fade-up">
         <h2>Projects</h2>
+        <div class="project-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
         <div class="projects-container">
-            <div class="project-card" data-aos="fade-right">
-                <h3>GD</h3>
-                <p>A web page to create and manage movie lists and Reels can be stored using modern web technologies.</p>
-                <div class="project-links">
-                    <a href="https://rohiiiitttt.github.io/GD.github.io/" target="_blank" rel="noopener" class="btn">View on GitHub</a>
-                </div>
+            <div class="project-card" data-aos="fade-right" data-category="web">
+                <a href="https://rohiiiitttt.github.io/GD.github.io/" target="_blank" rel="noopener" class="project-link">
+                    <img src="https://picsum.photos/400/180?random=1" alt="GD Project" class="project-image">
+                    <div class="project-details">
+                        <h3>GD</h3>
+                        <p>A web page to create and manage movie lists and Reels can be stored using modern web technologies.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <div class="project-links">
+                            <span class="btn">View Project</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="project-card" data-aos="fade-left">
-                <h3>Portfolio Website</h3>
-                <p>My personal portfolio showcasing my skills, projects, and professional journey.</p>
-                <div class="project-links">
-                    <a href="#profile" class="btn">View Live</a>
-                </div>
+            <div class="project-card" data-aos="fade-left" data-category="web">
+                <a href="#profile" class="project-link">
+                    <img src="https://picsum.photos/400/180?random=2" alt="Portfolio Website" class="project-image">
+                    <div class="project-details">
+                        <h3>Portfolio Website</h3>
+                        <p>My personal portfolio showcasing my skills, projects, and professional journey.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <div class="project-links">
+                            <span class="btn">View Project</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-category="mobile">
+                <a href="https://github.com/username/task-manager" target="_blank" rel="noopener" class="project-link">
+                    <img src="https://picsum.photos/400/180?random=3" alt="Mobile App" class="project-image">
+                    <div class="project-details">
+                        <h3>Task Manager App</h3>
+                        <p>A mobile app to manage daily tasks with notifications and reminders.</p>
+                        <p><strong>Technologies:</strong> React Native, Firebase</p>
+                        <div class="project-links">
+                            <span class="btn">View Project</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-category="other">
+                <a href="https://github.com/username/data-analysis-tool" target="_blank" rel="noopener" class="project-link">
+                    <img src="https://picsum.photos/400/180?random=4" alt="Data Analysis" class="project-image">
+                    <div class="project-details">
+                        <h3>Data Analysis Tool</h3>
+                        <p>A desktop tool for data analysis and visualization.</p>
+                        <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+                        <div class="project-links">
+                            <span class="btn">View Project</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
